@@ -19,3 +19,10 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 Route::post('/postupload','PostController@newPost')->name('uploadPost');
+/*--------------------------------View---------------------------------*/
+Route::get('/login','ViewController@loginView')->name('loginView');
+Route::get('/profile','ViewController@profileView')->name('profileView');
+Route::get('/signup','ViewController@signupView')->name('signupView');
+Route::get('/post_list','ViewController@postListView')->name('postListView');
+Route::get('/contact_us','ViewController@contactUsView')->name('contactUsView');
+Route::get('/about_us','ViewController@aboutUsView')->name('aboutUsView');
